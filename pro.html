@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f8fa;
+    }
+
+    .profile-box {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .profile-box h2 {
+      color: #207CEB;
+      margin-bottom: 20px;
+    }
+
+    .profile-box p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .logout-btn {
+      margin-top: 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout-btn:hover {
+      background-color: #c92a2a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-box">
+    <h2>Welcome 👋</h2>
+    <p><strong>Name:</strong> <span id="username">...</span></p>
+    <p><strong>Email:</strong> <span id="email">...</span></p>
+    <p><strong>User ID:</strong> <span id="uid">...</span></p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+
+  
+  <script src="pro.js"></script>
+</body>
+</html>
